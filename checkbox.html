@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<script src=" checkbox.js"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox Assignment</title>
+    <style>
+        .checkbox-container {
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <label> <input type="checkbox" id="selectAll" /> Select All </label>
+</div>
+<hr />
+
+<div class="checkbox-container">
+    <label> <input type="checkbox" class="child-checkbox" /> Option 1 </label
+    ><br />
+    <label> <input type="checkbox" class="child-checkbox" /> Option 2 </label
+    ><br />
+    <label> <input type="checkbox" class="child-checkbox" /> Option 3 </label
+    ><br />
+    <label> <input type="checkbox" class="child-checkbox" /> Option 4 </label
+    ><br />
+    <label> <input type="checkbox" class="child-checkbox" /> Option 5 </label
+    ><br />
+</div>
+
+<script>
+    const selectAllCheckbox = document.getElementById("selectAll");
+    const childCheckboxes = document.querySelectorAll(".child-checkbox");
+</script>
+</body>
+</html>
